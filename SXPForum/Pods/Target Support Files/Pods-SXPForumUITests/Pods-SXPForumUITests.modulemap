@@ -1,0 +1,6 @@
+framework module Pods_SXPForumUITests {
+  umbrella header "Pods-SXPForumUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

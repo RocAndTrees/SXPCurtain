@@ -1,0 +1,6 @@
+framework module Pods_SXPForum {
+  umbrella header "Pods-SXPForum-umbrella.h"
+
+  export *
+  module * { export * }
+}
