@@ -57,6 +57,7 @@
 		C10A243B20075174005327F4 /* SXPForumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SXPForumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C10A243F20075175005327F4 /* SXPForumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXPForumUITests.swift; sourceTree = "<group>"; };
 		C10A244120075175005327F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1F18DBF200D9C74003BD933 /* SXPForum-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SXPForum-Bridging-Header.h"; sourceTree = "<group>"; };
 		EF47F897251334A26A0E8CF8 /* Pods-SXPForumUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SXPForumUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SXPForumUITests/Pods-SXPForumUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FE38F668E67BC469470ABA50 /* Pods-SXPForum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SXPForum.release.xcconfig"; path = "Pods/Target Support Files/Pods-SXPForum/Pods-SXPForum.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,6 +177,7 @@
 		C174EF8F20079F2E007E39A8 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				C1F18DBF200D9C74003BD933 /* SXPForum-Bridging-Header.h */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -290,6 +292,7 @@
 				TargetAttributes = {
 					C10A241B20075174005327F4 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					C10A242F20075174005327F4 = {
@@ -662,12 +665,15 @@
 			baseConfigurationReference = 436A27EEAFF7B2CAF06D345F /* Pods-SXPForum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R5QX2A2ZZB;
 				INFOPLIST_FILE = SXPForum/AppDelegate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rocfly.SXPForum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SXPForum/Base/SXPForum-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -678,12 +684,14 @@
 			baseConfigurationReference = FE38F668E67BC469470ABA50 /* Pods-SXPForum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R5QX2A2ZZB;
 				INFOPLIST_FILE = SXPForum/AppDelegate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rocfly.SXPForum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SXPForum/Base/SXPForum-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
