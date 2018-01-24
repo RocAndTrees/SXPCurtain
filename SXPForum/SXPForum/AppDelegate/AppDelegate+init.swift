@@ -7,12 +7,17 @@
 //
 
 import LeanCloud
+import Bugly
 
 extension AppDelegate {
     
     /// LeanCloud 初始化
     func registerLeanCloud() {
          LeanCloud.initialize(applicationID: "MRUDF2ibNGFS4XwkRFjtFMO2-gzGzoHsz", applicationKey: "wJDzYIlX9nX8OMwm2dem9CNW")
+    }
+    
+    func registerBugly() {
+        Bugly.start(withAppId: "d3e0a49087")
     }
     
     

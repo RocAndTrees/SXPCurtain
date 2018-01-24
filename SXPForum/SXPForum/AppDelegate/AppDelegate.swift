@@ -18,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //1. LeanCloud
         registerLeanCloud()
-        
+        //2. registerBugly
+        registerBugly()
         return true
     }
 }
