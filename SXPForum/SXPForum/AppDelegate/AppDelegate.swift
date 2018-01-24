@@ -20,6 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         registerLeanCloud()
         //2. registerBugly
         registerBugly()
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.backgroundColor = UIColor.white
+        let mainViewController = SXPMainViewController()
+        mainViewController.selectedIndex = 1
+        self.window?.rootViewController = mainViewController
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 }
