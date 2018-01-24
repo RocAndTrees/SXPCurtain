@@ -21,15 +21,13 @@ class SXPMainViewController: UITabBarController {
     }
     
     func addChildViewController(childVC: UIViewController, title: String, image: String, selectedImage: String) {
+        
         childVC.title = title
         childVC.tabBarItem.image = UIImage.init(named: image)
         childVC.tabBarItem.selectedImage = UIImage.init(named: selectedImage)?.withRenderingMode(.alwaysOriginal)
         //naviViewController
         let nav :UINavigationController = UINavigationController.init(rootViewController: childVC)
         nav.tabBarItem = UITabBarItem.init(title: title, image: UIImage.init(named: image), selectedImage: UIImage.init(named: selectedImage)?.withRenderingMode(.alwaysOriginal))
-        //font color
-//
-        
         //未选中的颜色
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor:SXPColorTool.color(136, 134, 135, alpha: 1), NSAttributedStringKey.font:UIFont.systemFont(ofSize: 10)], for: .normal)
         //选中的颜色
@@ -56,8 +54,26 @@ class SXPMainViewController: UITabBarController {
     }
     
     func animation(_ index: NSInteger) {
-
+        if self.selectedIndex == index {
+            return
+        }
         
+        let tabBarButtonArrary : NSMutableArray = NSMutableArray()
+        for tabBarButton in self.tabBar.subviews {
+            if tabBarButton .isKind(of: NSClassFromString("UITabBarButton")!) {
+                tabBarButtonArrary.add(tabBarButton)
+            }
+        }
+        
+        let animation : CATransition = CATransition()
+        animation.duration = 0.3
+        
+        animation.type = kCATransitionFade
+        animation.subtype = kCATransitionFromBottom
+        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        
+        let ns : UIView = tabBarButtonArrary[index] as! UIView
+        ns.layer.add(animation, forKey: "UITabBarButton.transform.scale")
     }
     
 }
