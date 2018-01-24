@@ -8,6 +8,7 @@
 
 import UIKit
 import AudioToolbox
+import ChameleonFramework
 
 class SXPMainViewController: UITabBarController {
 
@@ -32,7 +33,7 @@ class SXPMainViewController: UITabBarController {
         //未选中的颜色
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor:SXPColorTool.color(136, 134, 135, alpha: 1), NSAttributedStringKey.font:UIFont.systemFont(ofSize: 10)], for: .normal)
         //选中的颜色
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor:UIColor.black, NSAttributedStringKey.font:UIFont.systemFont(ofSize: 10)], for: .selected)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: HexColor("00DA8C")!, NSAttributedStringKey.font:UIFont.systemFont(ofSize: 10)], for: .selected)
         
         nav.tabBarItem.titlePositionAdjustment = UIOffsetMake(0, -2);
         

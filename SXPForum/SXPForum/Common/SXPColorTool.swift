@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+
 class SXPColorTool {
     
     class func color(_ red: CGFloat, _ green: CGFloat, _ blue: CGFloat, alpha: CGFloat) -> UIColor {
