@@ -12,10 +12,10 @@
 		C10A242020075174005327F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10A241F20075174005327F4 /* AppDelegate.swift */; };
 		C10A242220075174005327F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10A242120075174005327F4 /* ViewController.swift */; };
 		C10A242520075174005327F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C10A242320075174005327F4 /* Main.storyboard */; };
-		C10A242720075174005327F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10A242620075174005327F4 /* Assets.xcassets */; };
 		C10A242A20075174005327F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C10A242820075174005327F4 /* LaunchScreen.storyboard */; };
 		C10A243520075174005327F4 /* SXPForumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10A243420075174005327F4 /* SXPForumTests.swift */; };
 		C10A244020075175005327F4 /* SXPForumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10A243F20075175005327F4 /* SXPForumUITests.swift */; };
+		C1E363452018203E001AA8F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1E363442018203E001AA8F3 /* Assets.xcassets */; };
 		C1E5466B200DF5A30040DCD0 /* AppDelegate+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E5466A200DF5A30040DCD0 /* AppDelegate+init.swift */; };
 		D64B1882A02BA1BED80E11F4 /* Pods_SXPForumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F74FFB2078B0B24A3B78206 /* Pods_SXPForumTests.framework */; };
 /* End PBXBuildFile section */
@@ -49,7 +49,6 @@
 		C10A241F20075174005327F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C10A242120075174005327F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C10A242420075174005327F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C10A242620075174005327F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C10A242920075174005327F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C10A242B20075174005327F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C10A243020075174005327F4 /* SXPForumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SXPForumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +57,7 @@
 		C10A243B20075174005327F4 /* SXPForumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SXPForumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C10A243F20075175005327F4 /* SXPForumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXPForumUITests.swift; sourceTree = "<group>"; };
 		C10A244120075175005327F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1E363442018203E001AA8F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1E5466A200DF5A30040DCD0 /* AppDelegate+init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+init.swift"; sourceTree = "<group>"; };
 		C1F18DBF200D9C74003BD933 /* SXPForum-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SXPForum-Bridging-Header.h"; sourceTree = "<group>"; };
 		EF47F897251334A26A0E8CF8 /* Pods-SXPForumUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SXPForumUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SXPForumUITests/Pods-SXPForumUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -213,7 +213,7 @@
 		C174EF9320079F7F007E39A8 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				C10A242620075174005327F4 /* Assets.xcassets */,
+				C1E363442018203E001AA8F3 /* Assets.xcassets */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -336,7 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C10A242A20075174005327F4 /* LaunchScreen.storyboard in Resources */,
-				C10A242720075174005327F4 /* Assets.xcassets in Resources */,
+				C1E363452018203E001AA8F3 /* Assets.xcassets in Resources */,
 				C10A242520075174005327F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -673,13 +673,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R5QX2A2ZZB;
 				INFOPLIST_FILE = SXPForum/AppDelegate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rocfly.SXPForum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SXPForum/Base/SXPForum-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -692,12 +693,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R5QX2A2ZZB;
 				INFOPLIST_FILE = SXPForum/AppDelegate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rocfly.SXPForum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SXPForum/Base/SXPForum-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
