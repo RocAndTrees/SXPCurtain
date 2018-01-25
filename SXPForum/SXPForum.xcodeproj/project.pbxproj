@@ -10,13 +10,14 @@
 		42E00F93443E1AEF2157BEDE /* Pods_SXPForumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E2B0401E84E2CCA8C42A943 /* Pods_SXPForumUITests.framework */; };
 		837C8D913D8548899B98CDBA /* Pods_SXPForum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E27FDFDFB8095FFE50FE74 /* Pods_SXPForum.framework */; };
 		C10A242020075174005327F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10A241F20075174005327F4 /* AppDelegate.swift */; };
-		C10A242220075174005327F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10A242120075174005327F4 /* ViewController.swift */; };
 		C10A242520075174005327F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C10A242320075174005327F4 /* Main.storyboard */; };
 		C10A243520075174005327F4 /* SXPForumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10A243420075174005327F4 /* SXPForumTests.swift */; };
 		C10A244020075175005327F4 /* SXPForumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10A243F20075175005327F4 /* SXPForumUITests.swift */; };
 		C12E69902018640A0097D207 /* SXPColorTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E698F2018640A0097D207 /* SXPColorTool.swift */; };
 		C1BA17ED2018297C008C2591 /* SXPMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BA17EC2018297C008C2591 /* SXPMainViewController.swift */; };
 		C1BA17EF201829E7008C2591 /* like.caf in Resources */ = {isa = PBXBuildFile; fileRef = C1BA17EE201829E7008C2591 /* like.caf */; };
+		C1C721222019703F00410187 /* SXPBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C721212019703F00410187 /* SXPBaseViewController.swift */; };
+		C1D94F3420196FB900585851 /* SXPHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D94F3320196FB900585851 /* SXPHomeViewController.swift */; };
 		C1E363452018203E001AA8F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1E363442018203E001AA8F3 /* Assets.xcassets */; };
 		C1E5466B200DF5A30040DCD0 /* AppDelegate+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E5466A200DF5A30040DCD0 /* AppDelegate+init.swift */; };
 		D64B1882A02BA1BED80E11F4 /* Pods_SXPForumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F74FFB2078B0B24A3B78206 /* Pods_SXPForumTests.framework */; };
@@ -49,7 +50,6 @@
 		98E27FDFDFB8095FFE50FE74 /* Pods_SXPForum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SXPForum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C10A241C20075174005327F4 /* SXPForum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SXPForum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C10A241F20075174005327F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C10A242120075174005327F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C10A242420075174005327F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C10A242B20075174005327F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C10A243020075174005327F4 /* SXPForumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SXPForumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +61,8 @@
 		C12E698F2018640A0097D207 /* SXPColorTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXPColorTool.swift; sourceTree = "<group>"; };
 		C1BA17EC2018297C008C2591 /* SXPMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXPMainViewController.swift; sourceTree = "<group>"; };
 		C1BA17EE201829E7008C2591 /* like.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = like.caf; sourceTree = "<group>"; };
+		C1C721212019703F00410187 /* SXPBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXPBaseViewController.swift; sourceTree = "<group>"; };
+		C1D94F3320196FB900585851 /* SXPHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXPHomeViewController.swift; sourceTree = "<group>"; };
 		C1E363442018203E001AA8F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1E5466A200DF5A30040DCD0 /* AppDelegate+init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+init.swift"; sourceTree = "<group>"; };
 		C1F18DBF200D9C74003BD933 /* SXPForum-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SXPForum-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -176,7 +178,7 @@
 		C12E698E201863B10097D207 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				C12E698F2018640A0097D207 /* SXPColorTool.swift */,
+				C1D94F2F2019650E00585851 /* Tool */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -184,7 +186,7 @@
 		C174EF8E20079F1C007E39A8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C10A242120075174005327F4 /* ViewController.swift */,
+				C1D94F3120196F8E00585851 /* Home */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -193,7 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				C1F18DBF200D9C74003BD933 /* SXPForum-Bridging-Header.h */,
-				C1BA17EC2018297C008C2591 /* SXPMainViewController.swift */,
+				C1D94F302019651B00585851 /* Main */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -230,6 +232,39 @@
 				C1E363442018203E001AA8F3 /* Assets.xcassets */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		C1D94F2F2019650E00585851 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				C12E698F2018640A0097D207 /* SXPColorTool.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		C1D94F302019651B00585851 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C1BA17EC2018297C008C2591 /* SXPMainViewController.swift */,
+				C1C721212019703F00410187 /* SXPBaseViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C1D94F3120196F8E00585851 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C1D94F3220196FA000585851 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C1D94F3220196FA000585851 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C1D94F3320196FB900585851 /* SXPHomeViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,9 +338,10 @@
 		C10A241420075174005327F4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SXP;
 				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0910;
-				ORGANIZATIONNAME = lin;
+				ORGANIZATIONNAME = xiaopeng.lin;
 				TargetAttributes = {
 					C10A241B20075174005327F4 = {
 						CreatedOnToolsVersion = 9.1;
@@ -530,9 +566,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C10A242220075174005327F4 /* ViewController.swift in Sources */,
 				C1BA17ED2018297C008C2591 /* SXPMainViewController.swift in Sources */,
+				C1C721222019703F00410187 /* SXPBaseViewController.swift in Sources */,
 				C10A242020075174005327F4 /* AppDelegate.swift in Sources */,
+				C1D94F3420196FB900585851 /* SXPHomeViewController.swift in Sources */,
 				C12E69902018640A0097D207 /* SXPColorTool.swift in Sources */,
 				C1E5466B200DF5A30040DCD0 /* AppDelegate+init.swift in Sources */,
 			);

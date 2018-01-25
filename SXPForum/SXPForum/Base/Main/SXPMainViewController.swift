@@ -20,7 +20,7 @@ class SXPMainViewController: UITabBarController {
         addChildViewController(childVC: UIViewController(), title: "消息", image: "tabbar_icon3", selectedImage: "tabbar_icon3_s")
     }
     
-    func addChildViewController(childVC: UIViewController, title: String, image: String, selectedImage: String) {
+    fileprivate func addChildViewController(childVC: UIViewController, title: String, image: String, selectedImage: String) {
         
         childVC.title = title
         childVC.tabBarItem.image = UIImage.init(named: image)
@@ -38,7 +38,7 @@ class SXPMainViewController: UITabBarController {
         self.addChildViewController(nav)
     }
     
-    func playSoud() {
+    fileprivate func playSoud() {
         if let path = Bundle.main.path(forResource: "like", ofType: "caf"){
             let soundURL = NSURL.fileURL(withPath: path)
             var soundID: SystemSoundID = 0
@@ -53,7 +53,7 @@ class SXPMainViewController: UITabBarController {
         animation(index!)
     }
     
-    func animation(_ index: NSInteger) {
+    fileprivate func animation(_ index: NSInteger) {
         if self.selectedIndex == index {
             return
         }
